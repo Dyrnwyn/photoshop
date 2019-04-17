@@ -62,6 +62,7 @@ function main(){
    phName = getPhoto (flName);
    shName = getShablon (flName);
    tpName = flName[1].toString();
+   if(typeDetect (fullMainName)){
    listTwinks = searchTwinkPhoto (phName, shName, tpName,workingPth);
    if (listTwinks.length>0){
    copyPhoto = confirm ("Изделие с  шаблоном "+shName + " и кадром "+phName+" уже сверстанно.\n Заменить уже готовым из файла "+listTwinks[0]+" ?");
@@ -77,7 +78,7 @@ function main(){
         app.activeDocument.saveAs (File (fullMainName));
        }      
         }
-
+}
     }
 
 main()
