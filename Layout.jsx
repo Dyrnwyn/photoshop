@@ -44,9 +44,11 @@ function main(){
              case "1106": delLayer ("childrenLayer");break;
              case "1211": delLayer ("childrenLayer");break;
              case "1214": delLayer ("childrenLayer");break;
+             case "1215": delLayer ("Место");break;
          case "1301": delLayer ("Ребенок")  ; break;  
          case "1302": delLayer ("childrenLayer");break;
          case "1303": delLayer ("Место")  ; break;  
+         case "1306": delLayer ("Место")  ; break;  
          case "1308": delLayer ("Место")  ; break;  
          case "1309": delLayer ("Место")  ; break;  
          case "1311": delLayer ("Место")  ; break;  
@@ -155,6 +157,12 @@ function main(){
           case "2072":delLayer ("Место"); break;
           case "2101":delLayer ("Место"); break;
           case "2103":delLayer ("Место"); break;
+          case "2105":delLayer ("Место"); break;
+          case "2114":delLayer ("childrenLayer"); break;
+          case "2115":delLayer ("childrenLayer"); break;
+          case "2121":delLayer ("Место"); break;
+          case "2123":delLayer ("Место"); break;
+          case "2126":delLayer ("childrenLayer"); break;
           case "2201":delLayer ("Ребенок"); break;
           case "2202":delLayer ("childrenLayer"); break;
           case "2203":delLayer ("childrenLayer"); break;
@@ -181,7 +189,8 @@ function main(){
           case "4015":moveLayer ("Layer 54", "Слой 46", "PLACEAFTER");moveLayer ("Layer 54 copy", "Слой 46", "PLACEAFTER"); break;
           case "4014":delLayer ("childrenLayer"); break;
           case "4019":delLayer ("Место"); setVisible ("Кривые 6 копия 2"); changeOpacity ("Кривые 6 копия 2"); break;
-          case "4021": break;
+          case "4020":delLayer ("Место"); break;
+          case "4021":delLayer ("место"); break;
           case "4022": delLayer ("childrenLayer"); changeOpacity ("Слой 1"); changeOpacity ("Слой 1 копия"); break;
           case "4024": delLayer ("childrenLayer");moveLayer ("Call OF Duty", "1", "PLACEAFTER");break;      
           case "4025": delLayer ("childrenLayer"); break;      
