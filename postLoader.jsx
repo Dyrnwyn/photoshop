@@ -170,7 +170,7 @@ function main(){
 //~           case "4015":moveLayer ("Layer 54", "Слой 46", "PLACEAFTER");moveLayer ("Layer 54 copy", "Слой 46", "PLACEAFTER"); break;
 //~           case "4014":delLayer ("childrenLayer"); break;
 //~           case "4019":delLayer ("Место"); setVisible ("Кривые 6 копия 2"); changeOpacity ("Кривые 6 копия 2"); break;
-//~           case "4021": break;
+           case "4021": changeOpacity ("FORTNITE4_кирка"); break;
 //~           case "4022": delLayer ("childrenLayer"); changeOpacity ("Слой 1"); changeOpacity ("Слой 1 копия"); break;
 //~           case "4024": delLayer ("childrenLayer");moveLayer ("Call OF Duty", "1", "PLACEAFTER");break;      
 //~           case "4025": delLayer ("childrenLayer"); break;      
@@ -229,7 +229,7 @@ function main(){
 //~ //----------------------------------------------------------------------7000-----------------------------------------------------------------------------
 //~           case "7004":delLayer ("childrenLayer");break;
 //~           case "7013":delLayer ("Место");break;
-            case "7014": moveLayer (app.activeDocument.activeLayer.name, "Место", "PLACEBEFORE") ;break;
+            case "7008": moveLayer (app.activeDocument.activeLayer.name, "Место", "PLACEBEFORE") ;break;
 //~           case "7015":delLayer ("Место");break;
 //~           case "7016":break;
            case "7017":moveLayer ("childrenLayer", "гагрина", "PLACEBEFORE"); break;
