@@ -1,4 +1,9 @@
 ﻿#target photoshop
+#include '/c/Scripts/LayoutScript/templateScripts/1411.jsx'
+#include '/c/Scripts/LayoutScript/templateScripts/2401.jsx'
+#include '/c/Scripts/LayoutScript/templateScripts/4030.jsx'
+#include '/c/Scripts/LayoutScript/templateScripts/1409.jsx'
+#include '/c/Scripts/LayoutScript/templateScripts/6040.jsx'
 function delLayer(name){
         layerName = app.activeDocument.artLayers.getByName (name);
         layerName.remove();
@@ -67,8 +72,9 @@ function main(){
          case "1405": delLayer ("0056");break;
          case "1406": delLayer ("childrenLayer");break;
          case "1408": delLayer ("childrenLayer");break;
+         case "1409": tmplt1409(); break;
          case "1410": break;
-         case "1411": delLayer ("Место");break;
+         case "1411": delLayer ("Место"); tmplt1411(); break;
          case "1413":delLayer ("Место") break;
          case "1414":delLayer ("childrenLayer"); break;
          case "1415": delLayer ("childrenLayer"); changeOpacity ("131_166_151-154_168"); moveLayer ("131_166_151-154_168", "1", "PLACEAFTER");break;//поднять на 1 слой вверх меч
@@ -184,7 +190,7 @@ function main(){
           case "2213":delLayer ("Место"); break;
           case "2214":delLayer ("Место"); break;
           case "2234":delLayer ("childrenLayer");moveLayer ("Слой 15", "Слой 45", "PLACEAFTER"); delLayer ("Слой 45")  break;
-          case "2401":delLayer ("Место"); break;
+          case "2401":delLayer ("Место"); tmplt2401(); break;
           case "2403":delLayer ("Место"); break;
           case "2404":delLayer ("Место"); break;
           
@@ -208,7 +214,7 @@ function main(){
           case "4026": delLayer ("childrenLayer"); break;
           case "4027": moveLayer("Layer 68", "Layer 75 copy 10", "PLACEBEFORE") ; break;
           case "4028":delLayer ("childrenLayer"); break;
-          case "4030":delLayer ("childrenLayer"); break;
+          case "4030":delLayer ("childrenLayer"); tmplt4030(); break;
           case "4034":delLayer ("childrenLayer"); break;
           case "4036":delLayer ("childrenLayer"); break;
           case "4037":delLayer ("childrenLayer"); break;
@@ -263,7 +269,7 @@ function main(){
           case "6035":delLayer ("childrenLayer");break;
           case "6036":delLayer ("childrenLayer");break;
           case "6038":delLayer ("childrenLayer");break;
-          case "6040":delLayer ("Место");break;
+          case "6040":delLayer ("Место"); tmplt6040(); break;
           case "6045":delLayer ("childrenLayer");break;
           case "6048":delLayer ("childrenLayer");break;
           case "6050":delLayer ("childrenLayer");break;
@@ -274,6 +280,7 @@ function main(){
           case "7004":delLayer ("childrenLayer");break;
           case "7006":delLayer ("childrenLayer");delLayer ("Слой 6");moveLayer ("Слой 5", "Слой 33", "PLACEAFTER");break;
           case "7008":delLayer ("Место");break;
+          case "7009":delLayer ("Место");break;
           case "7013":delLayer ("Место");break;
           case "7014":delLayer ("Место");break;
           case "7015":delLayer ("Место");break;
