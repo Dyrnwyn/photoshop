@@ -229,10 +229,10 @@ function main(){
 //~ //----------------------------------------------------------------------7000-----------------------------------------------------------------------------
 //~           case "7004":delLayer ("childrenLayer");break;
 //~           case "7013":delLayer ("Место");break;
-            case "7008": moveLayer (app.activeDocument.activeLayer.name, "Место", "PLACEBEFORE") ;break;
+            case "7008": moveLayer (app.activeDocument.activeLayer.name, "childrenLayer", "PLACEBEFORE") ;break;
 //~           case "7015":delLayer ("Место");break;
 //~           case "7016":break;
-           case "7017":moveLayer ("childrenLayer", "гагрина", "PLACEBEFORE"); break;
+           case "7011":moveLayer ("childrenLayer", "гагрина", "PLACEBEFORE"); break;
 //~           case "п001":delLayer ("childrenLayer"); moveLayer ("нижняя резинка", "верхняя резинка", "PLACEAFTER"); moveLayer ("синий", "верхняя резинка", "PLACEAFTER");break;
 //~         case "ф002":delLayer ("Место");break;
 //~        
@@ -240,6 +240,8 @@ function main(){
 //~        
 //~        default :alert ("Шаблон не прописан");
         }
+    
+    moveLayer (app.activeDocument.activeLayer.name, "childrenLayer", "PLACEBEFORE");
         }
    
 

@@ -56,5 +56,20 @@ executeAction( idDlt, undefined, DialogModes.NO );
 //~     var idkcanDispatchWhileModal = stringIDToTypeID( "kcanDispatchWhileModal" );
 //~     desc19983.putBoolean( idkcanDispatchWhileModal, true );
 //~ executeAction( idinvokeCommand, desc19983, DialogModes.NO );
+
+
+var idsetd = charIDToTypeID( "setd" );
+    var desc40 = new ActionDescriptor();
+    var idnull = charIDToTypeID( "null" );
+        var ref3 = new ActionReference();
+        var idChnl = charIDToTypeID( "Chnl" );
+        var idfsel = charIDToTypeID( "fsel" );
+        ref3.putProperty( idChnl, idfsel );
+    desc40.putReference( idnull, ref3 );
+    var idT = charIDToTypeID( "T   " );
+    var idOrdn = charIDToTypeID( "Ordn" );
+    var idNone = charIDToTypeID( "None" );
+    desc40.putEnumerated( idT, idOrdn, idNone );
+executeAction( idsetd, desc40, DialogModes.NO );
     
     }
