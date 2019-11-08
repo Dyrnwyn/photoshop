@@ -38,13 +38,24 @@ function typeDetect(tpName){
 function searchTwinkPhoto(phName,shName, tpName,workingPth){
     var listTwinks = new Array;
     phNameRe = new RegExp ("\\w*"+"_"+phName+"_"+"\\w*");
-    shNameRe = new RegExp ("\\w*"+shName+"\\w*");
-    actvDocName = new RegExp ("\\w*"+app.activeDocument.name+"\\w*");// проверяем, не являеться ли проверяемый файл, открытым документом
+    shNameRe = new RegExp ("\\w*"+"_"+shName+"_"+"\\w*");
+    actvDocName = new RegExp (app.activeDocument.name);// проверяем, не являеться ли проверяемый файл, открытым документом
     listFiles = Folder (workingPth).getFiles ("*.psd");
     
     for (var i=0;i<listFiles.length;i++){
         decodeFl = decodeURI (listFiles[i]);
-        if(typeDetect (decodeFl) && psdDetect (decodeFl) && phNameRe.test(decodeFl) && shNameRe.test(decodeFl) &&  !(actvDocName.test(decodeFl))  ){
+        tD = typeDetect (decodeFl)
+        psdD = psdDetect (decodeFl)
+        phD  = phNameRe.test(decodeFl)
+        shD = shNameRe.test(decodeFl)
+        flNm = decodeFl.split("/")
+        lngth = flNm.length
+        flNme = flNm[lngth-1]
+        actD = actvDocName.test( flNme)
+        if (app.activeDocument.name == flNme){
+             actD = true
+               }
+        if(tD && psdD && phD && shD &&  !(actD) ){
                                        listTwinks.push(decodeFl);                            
         }
     

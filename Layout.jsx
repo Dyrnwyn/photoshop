@@ -48,6 +48,7 @@ function main(){
 //---------------------------------------------------------------------1000------------------------------------------------------------------------------       
              case "1106": delLayer ("childrenLayer");break;
              case "1114": delLayer ("childrenLayer");break;
+             case "1203": delLayer ("childrenLayer");break;
              case "1204": delLayer ("childrenLayer");break;
              case "1211": delLayer ("childrenLayer");break;
              case "1214": delLayer ("childrenLayer");break;
@@ -102,7 +103,7 @@ function main(){
          case "1520": delLayer ("childrenLayer");break;
          case "1521": delLayer ("childrenLayer");break;
          case "1522": delLayer ("childrenLayer");break;
-         case "1523": delLayer ("место");break;
+         case "1523": delLayer ("childrenLayer");break;
          case "1525":delLayer ("childrenLayer"); break;
          case "1526":delLayer ("childrenLayer"); break;
          case "1527":delLayer ("childrenLayer"); break;
