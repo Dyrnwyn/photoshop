@@ -27,7 +27,7 @@ function saveAsPng(fileName){
 
 function main(){
     
-    for (var i = 1; i <= app.activeDocument.artLayers.length; i++){
+    for (var i = 1; i < app.activeDocument.artLayers.length; i++){
         setUnvisibleLayers ()
         CurLayer = app.activeDocument.layers[i];
         CurLayer.visible = true;
